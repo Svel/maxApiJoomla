@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+    <name>Раздел MaxPoster</name>
+    <creationDate>2010-11-15</creationDate>
+    <author>Alexander Vorobiev</author>
+    <authorEmail>avorobiev@maxposter.ru</authorEmail>
+    <authorUrl>http://maxposter.ru</authorUrl>
+    <copyright>Copyright 2010, All rights reserved.</copyright>
+    <license>GNU/GPL</license>
+    <version>1.0.0</version>
+    <releaseDate>2011-06-09</releaseDate>
+    <releaseType>First public release</releaseType>
+    <downloadUrl>http://maxposter.ru</downloadUrl>
+    <description>Вывод каталога авто.</description>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>maxposter.php</filename>
+        <filename>controller.php</filename>
+        <filename>lib/client/maxClient.php</filename>
+        <filename>lib/api/lib/maxOption.php</filename>
+        <filename>lib/api/lib/maxException.php</filename>
+        <filename>lib/api/lib/maxXmlClient.php</filename>
+        <filename>lib/api/lib/maxThumbnail.php</filename>
+        <filename>lib/api/lib/maxCacheHtmlClient.php</filename>
+        <filename>lib/api/lib/maxGDAdapter.php</filename>
+        <filename>lib/api/lib/maxCacheXmlClient.php</filename>
+        <filename>lib/api/lib/maxImageResize.php</filename>
+        <filename>lib/xsl/inc_form.xsl</filename>
+        <filename>lib/xsl/inc_vehicles.xsl</filename>
+        <filename>lib/xsl/marks.xsl</filename>
+        <filename>lib/xsl/inc_navigation.xsl</filename>
+        <filename>lib/xsl/inc_vehicle_params.xsl</filename>
+        <filename>lib/xsl/inc_url.xsl</filename>
+        <filename>lib/xsl/vehicle.xsl</filename>
+        <filename>lib/xsl/vehicles.xsl</filename>
+        <filename>lib/xsl/error.xsl</filename>
+        <filename>lib/xsl/search_form.xsl</filename>
+        <filename>assets/img/no_photo_120x90.gif</filename>
+        <filename>assets/css/style.css</filename>
+        <filename>assets/js/mt11_linked_models.js</filename>
+        <filename>assets/js/mt11_2step_photo.js</filename>
+        <filename>photo/thumbnail.php</filename>
+        <filename>photo/.htaccess</filename>
+        <filename>cache/index.html</filename>
+        <filename>cache/html/index.html</filename>
+        <filename>cache/xml/index.html</filename>
+        <filename>helpers/helper.php</filename>
+    </files>
+
+    <administration>
+        <menu>Раздел MaxPoster</menu>
+
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>admin.maxposter.php</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <folder>views</folder>
+        </files>
+    </administration>
+</install>

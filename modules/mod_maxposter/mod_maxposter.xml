@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Раздел MaxPoster: марки-модели</name>
+    <author>Alexander Vorobiev</author>
+    <creationDate>2010-11-15</creationDate>
+    <authorEmail>avorobiev@maxposter.ru</authorEmail>
+    <authorUrl>http://maxposter.ru</authorUrl>
+    <copyright>Copyright 2010, All rights reserved.</copyright>
+    <license>GNU/GPL</license>
+    <version>1.0.0</version>
+    <description>Блок с марками и моделями автомобилей</description>
+    <files>
+        <filename module="mod_maxposter">mod_maxposter.php</filename>
+        <filename>index.html</filename>
+    </files>
+</install>

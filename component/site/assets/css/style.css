@@ -1,0 +1,69 @@
+/* Частичный CSS clear */
+.maxposter img{border:0; margin:0;}
+.maxposter a{text-decoration:none;}
+.maxposter h1 {font-family:verdaha;font-weight:bold;font-size:20px;}
+.maxposter h2 {font-family:verdaha;font-weight:bold;font-size:18px;}
+/* Общие для раздла стили */
+.maxposter{width:664px;padding:20px 0px;}
+.maxposter br.clear{clear:both;}
+.maxposter p a {text-decoration:underline;font-size:inherit;}
+/* Список автомобилей */
+.maxposter #cars table {width:100%;border-collapse:collapse;}
+.maxposter #cars td, .maxposter #cars td{padding:4px;}
+.maxposter #cars tr.top{border:1px solid #DDDDDD;border-bottom:0;}
+.maxposter #cars tr.middle{border:1px solid #DDDDDD;border-width:0 1px;}
+.maxposter #cars tr.bottom{border:1px solid #DDDDDD;border-top:0;}
+.maxposter #cars tr.air{height:2px;}
+.maxposter #cars table a {font-weight:bold;display:block;text-decoration:underline;cursor:pointer;}
+.maxposter #cars tr.middle {vertical-align:top;text-align:center;}
+.maxposter #cars .middle th{margin-top:5px;font-weight:bold;color:#b71a1a;border:1px solid #999;border-bottom:0;}
+.maxposter #cars .middle td {border:1px solid #999;border-top:0;padding-top:15px;color:#000;font-weight:bold;}
+.maxposter #cars .grey {background-color:#d7d7d7;} 
+/* Постраничка */
+.maxposter .pagination {text-align:center;padding-top:10px;}
+.maxposter .pagination ul {display:inline;}
+.maxposter .pagination li{display:inline;list-style:none;background:#d7d7d7;padding:3px;margin:1px;color:black;text-align:center;}
+.maxposter .pagination a {color:white;margin:0;padding:0;}
+.maxposter .pagination a:hover {color:black;text-decoration:none;}
+/* Форма поиска */
+.maxposter div.search_form {background:#d7d7d7;padding:10px;}
+.maxposter form th{white-space: nowrap; text-align:left;padding-right:10px;}
+.maxposter tr {vertical-align:top;}
+.maxposter .fields th,  .maxposter .fields td{line-height:26px!important;}
+.maxposter input, .maxposter select {margin:3px 0!important;border-width:1px;}
+.maxposter .right div.half{float:left;width:110px;text-align:right!important;margin:0;}
+.maxposter .right .suffix{float:left;margin:0;}
+.maxposter .right input{width:80px;margin:0;}
+.maxposter .left select{width:150px;margin:0;}
+.maxposter .between{width:20px;}
+.maxposter .control {text-align:center;}
+.maxposter .control a{margin-left:10px;text-decoration: underline;}
+.maxposter input {width:100px;}
+.maxposter .error {margin-left:30px;color:red;margin-bottom:10px;}
+/* Описание авто */
+#car.maxposter tr {text-align:left;}
+#car.maxposter .full{width:100%;clear:both;}
+#car.maxposter div.top {float:left;}
+#car.maxposter div.top .right {float:right; margin:5px 0 5px 10px;}
+#car.maxposter table.main{width:100%;margin-bottom:20px;}
+#car.maxposter .right div {margin:5px 0;}
+#car.maxposter .right .price {font-family:verdaha;font-weight:bold;font-size:25px;}
+#car.maxposter .options {float:left;clear:both;margin-bottom:20px;}
+#car.maxposter .options ul {display:block;margin-left:20px;}
+#car.maxposter .options li {float:left;width:50%;list-style:square;}
+#car.maxposter .descriptions {margin-bottom:20px;}
+/* Фото */
+#car.maxposter #photos {width:644px;float:right;position:relative;padding:10px;background:#d7d7d7;margin-bottom:20px;}
+#car.maxposter #photos img {border:2px solid #d7d7d7;}
+#car.maxposter #original img {width:640; height:480;}
+#car.maxposter #thumbnails a {float:left;}
+#car.maxposter #thumbnails img {margin:6px 6px 0 0;width:120px;heigth:90px;}
+#car.maxposter #thumbnails img.active, .maxposter #thumbnails img.current {border-color:white!important;}
+#car.maxposter #thumbnails img.last {margin-right: 0;}
+/* Список Марок-Моделей */
+#rightcolumn .maxposter{width:auto;padding:0;}
+.maxposter ul.marks{display:block;padding:0;}
+.maxposter .marks li{background:none;}
+.maxposter li.mark a{font-weight:bold;}
+.maxposter ul.models{padding-left:10px;}
+.maxposter li.model a{font-weight:normal;}

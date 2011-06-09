@@ -1,0 +1,3 @@
+[submodule "component/site/lib/api"]
+	path = component/site/lib/api
+	url = git://github.com/maxposter/maxDealerAPI.git
