@@ -39,7 +39,7 @@ class MaxPosterHelper
       'cached_xml_themes' => array('vehicles', 'vehicle', 'marks'),
 
       // Список тем, которые должны кэшироваться в формате HTML
-      'cached_html_themes' => array('marks'),
+      'cached_html_themes' => array('marks', 'vehicles', 'full_vehicles', 'vehicle'),
 
       // Шаблон ссылки для списка автомобилей (к ссылке может быть добавлен параметр с номером страницы и параметры фильтрации)
       //'url_vehicles'  => JRoute::_('index.php?option=com_maxposter'),
