@@ -8,15 +8,16 @@
     <authorUrl>http://maxposter.ru</authorUrl>
     <copyright>Copyright 2010, All rights reserved.</copyright>
     <license>GNU/GPL</license>
-    <version>1.0.0</version>
-    <releaseDate>2011-06-09</releaseDate>
+    <version>1.0.1</version>
+    <releaseDate>2011-07-06</releaseDate>
     <releaseType>First public release</releaseType>
     <downloadUrl>http://maxposter.ru</downloadUrl>
-    <description>Вывод каталога авто.</description>
+    <description><![CDATA[Вывод каталога авто.]]></description>
 
     <files folder="site">
         <filename>index.html</filename>
         <filename>maxposter.php</filename>
+        <filename>router.php</filename>
         <filename>controller.php</filename>
         <filename>lib/client/maxClient.php</filename>
         <filename>lib/api/lib/maxOption.php</filename>
@@ -27,16 +28,19 @@
         <filename>lib/api/lib/maxGDAdapter.php</filename>
         <filename>lib/api/lib/maxCacheXmlClient.php</filename>
         <filename>lib/api/lib/maxImageResize.php</filename>
+        <!-- xsl templates -->
         <filename>lib/xsl/inc_form.xsl</filename>
         <filename>lib/xsl/inc_vehicles.xsl</filename>
         <filename>lib/xsl/marks.xsl</filename>
         <filename>lib/xsl/inc_navigation.xsl</filename>
-        <filename>lib/xsl/inc_vehicle_params.xsl</filename>
         <filename>lib/xsl/inc_url.xsl</filename>
         <filename>lib/xsl/vehicle.xsl</filename>
         <filename>lib/xsl/vehicles.xsl</filename>
         <filename>lib/xsl/error.xsl</filename>
         <filename>lib/xsl/search_form.xsl</filename>
+        <filename>lib/xsl/functions/functions.xsl</filename>
+        <filename>lib/xsl/functions/vehicle.xsl</filename>
+        <!-- assets -->
         <filename>assets/img/no_photo_120x90.gif</filename>
         <filename>assets/css/style.css</filename>
         <filename>assets/js/mt11_linked_models.js</filename>

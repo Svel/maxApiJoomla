@@ -1,7 +1,7 @@
 #DIRBASE = $(shell pwd);
 DIRBASE = $(PWD)
 
-all: module component
+all: remove module component
 
 # http://docs.joomla.org/Creating_a_simple_module
 module:
@@ -11,6 +11,12 @@ module:
 component:
 	cd $(DIRBASE)/component && find . ! -name "*.git" ! -path "*.git*" ! -path "*/api/test*" -print0 | xargs -0 zip $(DIRBASE)/com_maxposter.zip
 
+
+remove:
+	-rm $(DIRBASE)/mod_maxposter.zip
+	-rm $(DIRBASE)/com_maxposter.zip
+
+
 # ложные цели
-.PHONY: all module component
+.PHONY: all module component remove
 
