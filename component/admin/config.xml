@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
-  <params>
-    <param name="dealer_id" type="text" default="" label="Код автосалона" description="Код автосалона" size="30" />
-    <param name="password" type="text" default="" label="Пароль" description="Пароль для доступа к данным" size="30" />
-    <param name="api_version" type="text" default="1" label="Версия API" description="Номер используемой версии API" size="2" />
-    <param name="rows_by_page" type="text" default="20" label="Объявлений на странице" description="Количество объявлений на странице со списком авто" size="2" />
-    <param name="prefix" type="text" default="max_" label="Префикс" description="Префикс для отделения параметров сервиса от прочих параметров страницы (например куки)" size="10" />
-  </params>
+    <params>
+        <param type="spacer" default="Данные доступа" />
+        <param name="dealer_id" type="text" default="" label="Код автосалона" description="Код автосалона" size="30" />
+        <param name="password" type="text" default="" label="Пароль" description="Пароль для доступа к данным" size="30" />
+        <param name="api_version" type="text" default="1" label="Версия API" description="Номер используемой версии API" size="2" />
+        <!-- Постраничка -->
+        <param type="spacer" default="Постраничная навигация в списках" />
+        <param name="rows_by_page" type="text" default="20" label="Объявлений на странице" description="Количество объявлений на странице со списком авто" size="2" />
+        <param name="rows_by_request" type="text" default="500" label="Загружать сразу N объявлений" description="Количество кешируемых за один запрос объявлений, должно быть кратно кол-ву объявлений на странице." size="3" />
+        <!-- поиск -->
+        <param type="spacer" default="Поиск" />
+        <param name="prefix" type="text" default="max_" label="Префикс" description="Префикс для отделения параметров сервиса от прочих параметров страницы (например куки)" size="10" />
+    </params>
 </config>
