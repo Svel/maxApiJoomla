@@ -13,6 +13,16 @@ class MaxPosterHelper
     {
         $componentPath = JPATH_BASE.DS.'components'.DS.'com_maxposter'.DS;
 
+        $component =& JComponentHelper::getComponent('com_maxposter');
+        $menu = &JSite::getMenu();
+        $items = $menu->getItems('componentid', $component->id);
+
+        if (!is_array($items)) {
+            $Itemid = '';
+        } else {
+            $Itemid = isset($items[0]->id) ? '&Itemid=' . $items[0]->id : '';
+        }
+
         $defaultParameters = array(
           // Код автосалона
           'dealer_id' => '',
@@ -50,10 +60,10 @@ class MaxPosterHelper
           ),
 
           // Шаблон ссылки для списка автомобилей (к ссылке может быть добавлен параметр с номером страницы и параметры фильтрации)
-          'url_vehicles'  => JRoute::_('index.php?option=com_maxposter'),
+          'url_vehicles'  => JRoute::_('index.php?option=com_maxposter' . $Itemid),
 
           // Шаблон ссылки для описания автомобиля (%vehicle_id% будет заменен на код объявления)
-          'url_vehicle' => JRoute::_('index.php?option=com_maxposter&task=car&vehicle_id=%vehicle_id%'),
+          'url_vehicle' => JRoute::_('index.php?option=com_maxposter' . $Itemid . '&task=car&vehicle_id=%vehicle_id%'),
 
           // Шаблон ссылки на фото автомобиля (остальные значения будут добавлены в XSL)
           //'url_photo' => JURI::base().'components/com_maxposter/photo/',
