@@ -32,9 +32,9 @@ class MaxPosterController extends JController
     $document->setDescription($title);
     // Добавление js
     JHTML::script('mt11_linked_models.js', 'components/com_maxposter/assets/js/', true);
-    $document->addScriptDeclaration('window.addEvent("domready", function(){
-      LinkedModel("max_search_mark_id", "max_search_model_id");
-    });');
+    $document->addScriptDeclaration(sprintf('window.addEvent("domready", function(){
+      LinkedModel("%1$ssearch_mark_id", "%1$ssearch_model_id");
+    });', $client->getOption('prefix')));
 
     echo $client->getHtml();
   }
