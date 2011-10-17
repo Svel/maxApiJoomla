@@ -57,7 +57,7 @@ class MaxPosterHelper
 
           // Шаблон ссылки на фото автомобиля (остальные значения будут добавлены в XSL)
           //'url_photo' => JURI::base().'components/com_maxposter/photo/',
-          'url_photo' => '/components/com_maxposter/photo/',
+          'url_photo' => '/components/com_maxposter/photo/cache/',
 
           // Путь к thumbnail по-умолчанию для объявления без фотографии
           //'url_empty_thumbnail' => JURI::base().'components/com_maxposter/assets/img/no_photo_120x90.gif'

@@ -25,7 +25,7 @@ require_once(dirname(__FILE__).'/../lib/api/lib/maxThumbnail.php');
 
 $maxThumb = new maxThumbnail(array(
   'dealer_id' => $params->get('dealer_id'),
-  'photo_dir' => dirname(__FILE__),
+  'photo_dir' => dirname(__FILE__) . '/cache', # TODO: в настройки передавать результат работы хелпера
   // а вот эти параметры и правда бы хотелось в настройки вынести
   'allowed_photo_sizes' => array(
     '640x480'  => array('width' => 640, 'height' => 480),
