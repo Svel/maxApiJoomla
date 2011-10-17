@@ -45,6 +45,7 @@
         <filename>assets/css/style.css</filename>
         <filename>assets/js/mt11_linked_models.js</filename>
         <filename>assets/js/mt11_2step_photo.js</filename>
+        <folder>photo</folder>
         <filename>photo/thumbnail.php</filename>
         <filename>photo/.htaccess</filename>
         <filename>cache/index.html</filename>
@@ -64,4 +65,17 @@
             <folder>views</folder>
         </files>
     </administration>
+
+    <!-- Стандартные настройки компонента при установке -->
+    <!-- http://docs.joomla.org/Component_parameters#1._Component-wide_default_parameters_3 -->
+    <params>
+        <param name="dealer_id" default="5" />
+        <param name="password" default="555" />
+        <param name="api_version" default="1" />
+        <!-- Постраничка -->
+        <param name="rows_by_page" default="20" />
+        <param name="rows_by_request" default="100" />
+        <!-- поиск -->
+        <param name="prefix" default="max_" />
+    </params>
 </install>
